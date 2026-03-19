@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SmartBudget — інформаційна система підтримки прийняття рішень щодо споживчих витрат. Бакалаврська робота студента групи ІН-24 Косілова В.О., СумДУ, 2025.">
-  <meta name="keywords" content="SmartBudget, бакалаврська робота, DSS, Flask, Python, SQLite, бюджет">
+  <meta name="description" content="SmartBudget — інформаційна система підтримки прийняття рішень щодо споживчих витрат. Бакалаврська робота студента групи ІН-24 Косілова В.О., СумДУ, 2026.">
+  <meta name="keywords" content="SmartBudget, бакалаврська робота, DSS, Flask, Python, SQLite, бюджет, витрати">
   <meta name="author" content="Косілов В.О.">
   <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
   <meta property="og:title" content="SmartBudget — Бакалаврська робота | Косілов В.О.">
   <meta property="og:description" content="Інформаційна система підтримки прийняття рішень щодо споживчих витрат. СумДУ, ІН-24, 2026.">
   <meta property="og:url" content="https://alwaysfeell.github.io/smartbudget-landing/">
-  <meta property="og:locale" content="uk_UA">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="SmartBudget — Бакалаврська робота">
-  <meta name="twitter:description" content="Інформаційна система підтримки прийняття рішень щодо споживчих витрат.">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,9 +31,10 @@
 </head>
 <body>
   <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
   <header role="banner">
     <div class="container header-inner">
-      <div class="header-logo" aria-label="Логотип SmartBudget">
+      <div class="header-logo">
         <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
           <rect width="36" height="36" rx="8" fill="#2563eb"/>
           <text x="18" y="25" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">S</text>
@@ -54,15 +52,168 @@
       </nav>
     </div>
   </header>
+
   <main id="main-content" role="main">
-    <section aria-labelledby="hero-title">
-      <h1 id="hero-title">SmartBudget</h1>
-      <p>Бакалаврська робота — вміст незабаром</p>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="badge" aria-label="Тип роботи">Бакалаврська робота · СумДУ · 2026</div>
+        <h1 id="hero-title">
+          SmartBudget
+          <span lang="en">/ Smart Budget</span>
+        </h1>
+        <p class="hero-subtitle" lang="uk">Інформаційна система підтримки прийняття рішень щодо споживчих витрат</p>
+        <p class="hero-subtitle-en" lang="en">Information Decision Support System for Consumer Expenditure Management</p>
+        <p class="hero-description">Система аналізу витрат, прогнозування бюджету та персоналізованих фінансових рекомендацій на основі правила 50/30/20 та сценарного моделювання.</p>
+        <div class="hero-keywords" aria-label="Ключові слова">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">DSS</span>
+          <span class="tag">MVC</span>
+          <span class="tag">Bootstrap 5</span>
+        </div>
+        <div class="hero-cta">
+          <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="Переглянути код на GitHub">
+            Переглянути на GitHub
+          </a>
+          <a href="#about" class="btn btn-secondary">Дізнатися більше</a>
+        </div>
+      </div>
     </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">Про роботу</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Актуальність теми</h3>
+            <p>В умовах зростання фінансової нестабільності та складності управління особистими фінансами більшість громадян не мають зручних інструментів для аналізу своїх витрат та прийняття обґрунтованих фінансових рішень. Наявні рішення або надто складні, або не адаптовані до українських реалій.</p>
+            <p>SmartBudget вирішує цю проблему через побудову доступної веб-системи з елементами DSS (Decision Support System), що аналізує витрати, виявляє аномалії, будує прогнози та надає персоналізовані рекомендації.</p>
+          </div>
+          <div class="about-info">
+            <dl class="info-list">
+              <dt>Студент</dt>
+              <dd>Косілов В.О.</dd>
+              <dt>Група</dt>
+              <dd>ІН-24</dd>
+              <dt>Університет</dt>
+              <dd>Сумський державний університет</dd>
+              <dt>Рік</dt>
+              <dd>2026</dd>
+              <dt>Технологічний стек</dt>
+              <dd>Python, Flask, SQLite, Bootstrap 5</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Goals -->
+    <section id="goals" class="section section-alt" aria-labelledby="goals-title">
+      <div class="container">
+        <h2 id="goals-title">Мета та завдання</h2>
+        <div class="goals-grid">
+          <div class="goal-card">
+            <div class="goal-number" aria-hidden="true">01</div>
+            <h3>Мета дослідження</h3>
+            <p>Розробити інформаційну веб-систему підтримки прийняття рішень, що автоматизує аналіз споживчих витрат та формує обґрунтовані фінансові рекомендації для кінцевого користувача.</p>
+          </div>
+          <div>
+            <h3>Основні завдання</h3>
+            <ol class="task-list" role="list">
+              <li>Провести аналіз предметної галузі управління споживчими витратами та наявних DSS-рішень</li>
+              <li>Спроектувати архітектуру MVC-застосунку з модулями аналітики, прогнозування та рекомендацій</li>
+              <li>Реалізувати модуль DSS з правилом 50/30/20, сценарним аналізом та оцінкою якості даних</li>
+              <li>Розробити інтерактивний дашборд із графіками, статистикою та аналізом цін</li>
+              <li>Провести тестування системи та оцінити якість рекомендацій</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methodology" class="section" aria-labelledby="methodology-title">
+      <div class="container">
+        <h2 id="methodology-title">Методологія</h2>
+        <div class="method-grid">
+          <article class="method-card" aria-label="Архітектура">
+            <div class="method-icon" aria-hidden="true">⬡</div>
+            <h3>Архітектура MVC</h3>
+            <p>Розділення на шари Model (бізнес-логіка), View (Jinja2 + Bootstrap), Controller (Flask Blueprints). Чітка відповідальність кожного компонента.</p>
+          </article>
+          <article class="method-card" aria-label="DSS модуль">
+            <div class="method-icon" aria-hidden="true">◈</div>
+            <h3>Модуль DSS</h3>
+            <p>Правило 50/30/20 (потреби/бажання/заощадження), прогнозування трендів, сценарний аналіз та оцінка якості вхідних даних.</p>
+          </article>
+          <article class="method-card" aria-label="Аналітика">
+            <div class="method-icon" aria-hidden="true">◎</div>
+            <h3>Аналіз даних</h3>
+            <p>Статистичні звіти, графіки витрат, аналіз цін по категоріях, виявлення аномалій та персоналізовані рекомендації.</p>
+          </article>
+          <article class="method-card" aria-label="База даних">
+            <div class="method-icon" aria-hidden="true">▦</div>
+            <h3>Зберігання даних</h3>
+            <p>SQLite база даних з ініціалізацією схеми та seed-даними. Структурований доступ через database.py з чітким API.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="section section-alt" aria-labelledby="results-title">
+      <div class="container">
+        <h2 id="results-title">Очікувані результати</h2>
+        <div class="results-list">
+          <div class="result-item">
+            <h3>Функціональна система</h3>
+            <p>Повноцінний веб-застосунок із дашбордом, модулями витрат, аналізу, рекомендацій, DSS, профілю та фінансових цілей.</p>
+          </div>
+          <div class="result-item">
+            <h3>Практична цінність</h3>
+            <p>Система надає реальну допомогу користувачам у контролі бюджету, виявленні надмірних витрат та плануванні фінансів.</p>
+          </div>
+          <div class="result-item">
+            <h3>Відкритий код</h3>
+            <p>Проєкт розповсюджується під ліцензією MIT та доступний на GitHub для подальшого розвитку та дослідження.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="section" aria-labelledby="contacts-title">
+      <div class="container">
+        <h2 id="contacts-title">Контакти та посилання</h2>
+        <div class="contacts-grid">
+          <address class="contact-info" aria-label="Контактна інформація">
+            <p><strong>Автор:</strong> Косілов В.О.</p>
+            <p><strong>Група:</strong> ІН-24</p>
+            <p><strong>Університет:</strong> Сумський державний університет</p>
+            <p><strong>Науковий керівник:</strong> Будник М.М.</p>
+          </address>
+          <div class="contact-links">
+            <a href="https://github.com/alwaysfeell/SmartBudget" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="GitHub репозиторій SmartBudget">
+              <span aria-hidden="true">↗</span> Репозиторій на GitHub
+            </a>
+            <a href="https://github.com/alwaysfeell" target="_blank" rel="noopener noreferrer" class="link-card" aria-label="GitHub профіль автора">
+              <span aria-hidden="true">↗</span> Профіль автора
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
   <footer role="contentinfo">
-    <div class="container">
-      <p>© 2026 Косілов В.О., ІН-24, СумДУ</p>
+    <div class="container footer-inner">
+      <p>© 2026 Косілов В.О. · ІН-24 · Сумський державний університет</p>
+      <p>Бакалаврська робота · MIT License</p>
     </div>
   </footer>
 </body>
